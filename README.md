@@ -16,23 +16,25 @@ The core analysis and compliance documentation are organized in the `docs/` dire
 ---
 
 ## 📂 Repository Structure
+
+## Repository Structure
+
 ```text
 aws-vpc-secure-sandbox-grc/
 ├── .github/
 │   └── workflows/
-│       └── security.yml          # CI/CD Checkov static analysis pipeline
+│       └── security.yml
 ├── docs/
-│   ├── CONTROL_MATRIX.md         # Technical-to-GRC framework mapping
-│   └── FINDINGS.md               # Risk analysis, component review, & security findings
-├── .gitignore                    # Excludes local state files and binaries
-├── main.tf                       # Declarative Terraform infrastructure code
-└── README.md                     # Project landing page & architecture overview
-
+│   ├── CONTROL_MATRIX.md
+│   └── FINDINGS.md
+├── .gitignore
+├── main.tf
+└── README.md
+```
 
 ## 🏗️ Network Architecture
 
 The diagram below illustrates the intended VPC layout, subnet boundaries, internet routing, and network logging. Private subnet routing and security group rules should be verified against the Terraform implementation.
-
 
 ## Architecture Diagram
 
